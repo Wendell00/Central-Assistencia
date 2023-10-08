@@ -1,0 +1,528 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v15/92zPtBhPNqw79Ij1E865zBUv7mz9JQVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v15/92zPtBhPNqw79Ij1E865zBUv7myjJQVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v15/92zPtBhPNqw79Ij1E865zBUv7myRJQVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v15/92zPtBhPNqw79Ij1E865zBUv7mx9IgVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/signika/v25/vEF72_JTCgwQ5ejvMV0Ox_Kg1UwJ0tKfX4zNpD8E4ASzH1r9szuYzQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/signika/v25/vEF72_JTCgwQ5ejvMV0Ox_Kg1UwJ0tKfX4zNpD8E4ASzH1r9XzyYzQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyeMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBIXvYC6trAT55ZBi1ueQVIjQTDppqqFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqqFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBIXvYC6trAT55ZBi1ueQVIjQTDypqqFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBIXvYC6trAT55ZBi1ueQVIjQTDJp2qFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBIXvYC6trAT55ZBi1ueQVIjQTDH52qFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/vollkorn/v23/0ybuGDoxxrvAnPhYGxksckM2WMCpRjDj-DKhXWmZ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Flex';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoflex/v9/NaN4epOXO_NexZs0b5QrzlOHb8wCikXpYqmZsWI-__OGfttPZktqc2VdZ80KvCLZaPcSBZtOx2MifRuWR28sPJtUMbsFEK6cRrleUx9Xgbm3WLHa_F4Ep4Fm0PN19Ik5Dntczx0wZGzhPlL1YNMYKbv9_1IQXOw7AiUJVXpRJ6cXW4O8TNGoXjC79QRyaLshNDUf3e0O-gn5rrZCu20YNYG0EACUTNK-QKavMlxGIQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ptserif/v18/EJRVQgYoZZY2vCFuvDFR.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Flex';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoflex/v9/NaN4epOXO_NexZs0b5QrzlOHb8wCikXpYqmZsWI-__OGfttPZktqc2VdZ80KvCLZaPcSBZtOx2MifRuWR28sPJtUMbsFEK6cRrleUx9Xgbm3WLHa_F4Ep4Fm0PN19Ik5Dntczx0wZGzhPlL1YNMYKbv9_1IQXOw7AiUJVXpRJ6cXW4O8TNGoXjC79QRyaLshNDUf3e0O-gn5rrZCu20YNYG0EACUTNK-QKavMlxGIQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Martian Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/martianmono/v3/2V08KIcADoYhV6w87xrTKjs4CYElh_VS9YA4TlTnQzaVMIE6j15dYY1qu86W.ttf) format('truetype');
+}
+nav {
+  width: 100vw;
+  height: 90px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-logo {
+  width: auto;
+  height: 80%;
+  margin-left: 80px;
+}
+nav ul {
+  width: calc(70vw - 220px);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10vw;
+}
+nav ul li {
+  width: 60px;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-family: 'PT Serif', serif;
+  color: #999;
+  transition: 0.6s;
+}
+nav ul li a:hover {
+  color: #333;
+}
+nav ul .nav-li-active {
+  border-bottom: 2px solid #0E387A;
+}
+main {
+  width: 100vw;
+  height: calc(100vh - 90px);
+  display: flex;
+  position: relative;
+}
+main .main-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+main .main-video .video {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+main .main-video .main-color-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.85;
+  top: 0;
+}
+main .main-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .main-content .main-title {
+  letter-spacing: 10px;
+  font-size: 70px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 600;
+  color: #0E387A;
+}
+main .main-content .main-subtitle {
+  margin-top: 20px;
+  letter-spacing: 6px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #0E387A;
+  font-family: 'Jost', sans-serif;
+}
+main .main-content .main-buttons {
+  width: 50%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .main-content .main-buttons .main-btn {
+  width: 250px;
+  height: 40px;
+  font-size: 1.3em;
+  padding: 15px;
+  text-align: center;
+  border: 2px solid #0E387A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Karla', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .main-content .main-buttons .main-btn-saiba {
+  background-color: #0E387A;
+  color: #ffffff;
+}
+main .main-content .main-buttons .main-btn-saiba:hover {
+  background-color: #0e377ac5;
+}
+main .main-content .main-buttons .main-btn-contato {
+  background-color: transparent;
+  color: #0E387A;
+}
+main .main-content .main-buttons .main-btn-contato:hover {
+  background-color: #0e377a25;
+}
+.conheca {
+  width: 100vw;
+  height: 600px;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.conheca .container-conheca {
+  width: 100%;
+  max-width: 1400px;
+  height: 600px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+}
+.conheca .container-conheca .conheca-txt {
+  width: 60%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.conheca .container-conheca .conheca-txt .h2-contain {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+}
+.conheca .container-conheca .conheca-txt .h2-contain h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.3rem;
+  color: #1b3bc9;
+  font-weight: 600;
+}
+.conheca .container-conheca .conheca-txt .space {
+  margin-top: 60px;
+}
+.conheca .container-conheca .conheca-txt p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  color: #353434;
+}
+.conheca .container-conheca .conheca-txt .p-txt {
+  margin-top: 30px;
+}
+.conheca .container-conheca .conheca-img {
+  height: 100%;
+  width: 50%;
+  background-color: black;
+}
+.especializacao {
+  width: 100vw;
+  height: 600px;
+  position: relative;
+  background-color: #0a1649;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.especializacao .bg-especializacao {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('../public/pexels.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.5;
+  z-index: 2;
+}
+.especializacao .container-especializacao {
+  width: 100%;
+  max-width: 1400px;
+  height: 400px;
+  background-color: rgba(0, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+}
+.especializacao .container-especializacao .h2-contain {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.especializacao .container-especializacao .h2-contain h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.5rem;
+  color: #dfdddd;
+  text-shadow: 1px 1px 5px #000;
+  font-weight: 600;
+}
+.especializacao .container-especializacao .imgs-especializacao {
+  width: 100%;
+  height: 100%;
+}
+.especializacao .container-especializacao .imgs-especializacao ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.especializacao .container-especializacao .imgs-especializacao ul li {
+  width: 450px;
+  height: 200px;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+.especializacao .container-especializacao .imgs-especializacao ul li img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+@font-face {
+  font-family: Gotham Narr;
+  src: url(../public/fonts/Gotham\ Narrow\ Bold.otf);
+}
+@font-face {
+  font-family: Gotham Narr Light;
+  src: url(../public/fonts/Gotham\ Narrow\ Extra\ Light.otf);
+}
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(../public/fonts/SourceSansPro-Bold.ttf);
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  transition: 0.2s;
+  background-color: white;
+}
