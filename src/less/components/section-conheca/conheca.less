@@ -1,63 +1,79 @@
 .conheca {
     width: 100vw;
     height: 600px;
-    padding: 20px 0px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
+    padding: 100px;
+    box-sizing: border-box;
 
-    
-
-    .container-conheca {
+    .conheca-container{
+        max-width: 1800px;
         width: 100%;
-        max-width: 1400px;
-        height: 600px;
-        box-sizing: border-box;
+        height: 100%;
+        margin: 0 auto;
         display: flex;
-        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
 
-        .conheca-txt {
-            width: 60%;
-            height: 100%;
-            box-sizing: border-box;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
+        img{
+            width: 600px;
+            height: auto;
+        }
 
-            .h2-contain {
-                width: 100%;
-                max-width: 1400px;
-                height: auto;
+        .conheca-content{
+            width: 45%;
+            height: auto;
+
+            h2{
+                font-size: 2.6em;
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                color: #34373B;
                 
-        
-                h2 {
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 2.3rem;
-                    color: rgb(27, 59, 201);
-                    font-weight: 600;
+
+                span{
+                    color: #0E387A;
                 }
             }
 
-            .space {
-                margin-top: 60px;
-            }
+            .conheca-items{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+                gap: 0;
 
-            p {
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 1.4rem;
-                color: rgb(53, 52, 52);
-            }
+                .conheca-items-div{
+                    width: 100%;
+                    height: 142.5px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
 
-            .p-txt {
-                margin-top: 30px;
-            }
-        }
+                    img{
+                        width: 30%;
+                        height: auto;
+                        margin-right: 20px;
+                    }
 
-        .conheca-img {
-            height: 100%;
-            width: 50%;
-            background-color: black;
+                    .conheca-items-text{
+
+                        h3{
+                            font-size: 1.3em;
+                            font-family: 'Signika', sans-serif;
+                            font-weight: 600;
+                            color: #34373B;
+                            margin-bottom: 8px;
+                        }
+
+                        p{
+                            font-size: 0.92em;
+                            font-family: 'Karla', sans-serif;
+                            font-weight: 400;
+                            color: gray;
+                        }
+                    }
+                }
+            }
         }
     }
 }

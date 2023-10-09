@@ -190,6 +190,13 @@ table {
   src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Karla';
   font-style: normal;
   font-weight: 300;
@@ -395,51 +402,67 @@ main .main-content .main-buttons .main-btn-contato:hover {
 .conheca {
   width: 100vw;
   height: 600px;
-  padding: 20px 0px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
-}
-.conheca .container-conheca {
-  width: 100%;
-  max-width: 1400px;
-  height: 600px;
+  padding: 100px;
   box-sizing: border-box;
-  display: flex;
-  gap: 10px;
 }
-.conheca .container-conheca .conheca-txt {
-  width: 60%;
+.conheca .conheca-container {
+  max-width: 1800px;
+  width: 100%;
   height: 100%;
-  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.conheca .container-conheca .conheca-txt .h2-contain {
-  width: 100%;
-  max-width: 1400px;
+.conheca .conheca-container img {
+  width: 600px;
   height: auto;
 }
-.conheca .container-conheca .conheca-txt .h2-contain h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.3rem;
-  color: #1b3bc9;
+.conheca .conheca-container .conheca-content {
+  width: 45%;
+  height: auto;
+}
+.conheca .conheca-container .conheca-content h2 {
+  font-size: 2.6em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #34373B;
+}
+.conheca .conheca-container .conheca-content h2 span {
+  color: #0E387A;
+}
+.conheca .conheca-container .conheca-content .conheca-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 0;
+}
+.conheca .conheca-container .conheca-content .conheca-items .conheca-items-div {
+  width: 100%;
+  height: 142.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.conheca .conheca-container .conheca-content .conheca-items .conheca-items-div img {
+  width: 30%;
+  height: auto;
+  margin-right: 20px;
+}
+.conheca .conheca-container .conheca-content .conheca-items .conheca-items-div .conheca-items-text h3 {
+  font-size: 1.3em;
+  font-family: 'Signika', sans-serif;
   font-weight: 600;
+  color: #34373B;
+  margin-bottom: 8px;
 }
-.conheca .container-conheca .conheca-txt .space {
-  margin-top: 60px;
-}
-.conheca .container-conheca .conheca-txt p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  color: #353434;
-}
-.conheca .container-conheca .conheca-txt .p-txt {
-  margin-top: 30px;
-}
-.conheca .container-conheca .conheca-img {
-  height: 100%;
-  width: 50%;
-  background-color: black;
+.conheca .conheca-container .conheca-content .conheca-items .conheca-items-div .conheca-items-text p {
+  font-size: 0.92em;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  color: gray;
 }
 .especializacao {
   width: 100vw;
