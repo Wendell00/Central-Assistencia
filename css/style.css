@@ -477,7 +477,7 @@ main .main-content .main-buttons .main-btn-contato:hover {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url('../public/pexels.jpg');
+  background-image: url('../public/fundo.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
