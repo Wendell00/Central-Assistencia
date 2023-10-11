@@ -1,58 +1,84 @@
 .cards {
     width: 100vw;
     height: 1300px;
-    padding: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: white;
 
-    .title-cards {
-        width: 100%;
+    .card-h2{
+        margin-top: 80px;
+        width: 80%;
         max-width: 1800px;
-        height: 200px;
-        //background-color: rgb(30, 255, 0);
+        height: auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        
 
-        h2 {
-            color: rgb(51, 51, 212);
-            text-shadow: 0.2px 0.2px 1px rgb(0, 0, 0);
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 3.5rem;
+        h2{
+            color: #0a1649;
+            font-family: 'Jost', sans-serif;
+            font-size: 3rem;
             font-weight: 600;
+        }
+
+        .card-btn{
+            width: 255px;
+            height: 48px;
+            background-color: #0a1649;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 0 30px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #0a1649e1;
+            }
+
+            img{
+                width: auto;
+                height: 14px;
+                animation: card-arrow 2s infinite;
+            }
+
+            p{
+                color: #fff;
+                font-family: 'Jost', sans-serif;
+                font-weight: 600;
+                font-size: 1.1em;
+                line-height: normal;
+            }
         }
     }
 
     .container-cards {
-        width: 100%;
-        max-width: 1750px;
-        height: 1200px;
-        //background-color: aqua;
+        width: 80%;
+        max-width: 1800px;
+        height: auto;
         display: grid;
-        justify-items: center;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 20px;
-
+        column-gap: 0px;
 
         .card {
-            width: 500px;
+            width: 90%;
             height: 550px;
-            //background-color: red;
             border-radius: 6px;
-            -webkit-box-shadow: -1px -1px 25px -20px rgba(0,0,0,0.75);
-            -moz-box-shadow: -1px -1px 25px -20px rgba(0,0,0,0.75);
-            box-shadow: -1px -1px 25px -20px rgba(0,0,0,0.75);
-            transition: color 0.5s ease;
+            // -webkit-box-shadow: -1px -1px 25px -20px rgba(0,0,0,0.75);
+            // -moz-box-shadow: -1px -1px 25px -20px rgba(0,0,0,0.75);
+            // box-shadow: -1px -1px 25px -20px rgba(0,0,0,0.75);
+            
 
             &:hover {
                 .title-card {
+                    transition: 0.5s;
                     border-color: blue;
                 }
 
                 h3 {
+                    transition: 0.5s;
                     color: blue;
                 }
             }
