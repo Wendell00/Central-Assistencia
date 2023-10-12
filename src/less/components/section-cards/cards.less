@@ -5,6 +5,30 @@
     align-items: center;
     flex-direction: column;
     background-color: white;
+    gap: 40px;
+    margin-bottom: 60px;
+    
+    @media screen and (max-width: 1128.5px) {
+        height: 1600px;
+    }
+
+    @media screen and (max-width: 743.5px) {
+        height: 3250px;
+    }
+
+    @media screen and (max-width: 447.5px) {
+        height: 3200px;
+    }
+
+    @media screen and (max-width: 433.5px) {
+        height: 3010px;
+    }
+
+    @media screen and (max-width: 313.5px) {
+        height: 2640px;
+    }
+
+
 
     .card-h2{
         margin-top: 80px;
@@ -15,11 +39,55 @@
         justify-content: space-between;
         align-items: center;
 
+        @media screen and (max-width: 737.5px) {
+            flex-direction: column;
+            gap: 27px;
+        }
+
+        @media screen and (max-width: 545.5px) {
+            width: auto;
+        }
+
+
         h2{
             color: #0a1649;
             font-family: 'Jost', sans-serif;
             font-size: 3rem;
             font-weight: 600;
+
+            @media screen and (max-width: 1128.5px) {
+                font-size: 2.4rem;
+            }
+
+            @media screen and (max-width: 850.5px) {
+                font-size: 2.2rem;
+            }
+
+            @media screen and (max-width: 816.5px) {
+                font-size: 2rem;
+            }
+
+            @media screen and (max-width: 737.5px) {
+                font-size: 2.2rem;
+            }
+
+            @media screen and (max-width: 545.5px) {
+                font-size: 2rem;
+            }
+
+            @media screen and (max-width: 499.5px) {
+                font-size: 1.6rem;
+            }
+
+            @media screen and (max-width: 333.5px) {
+                font-size: 1.4rem;
+            }
+
+            @media screen and (max-width: 289.5px) {
+                font-size: 1.32rem;
+            }
+
+
         }
 
         .card-btn{
@@ -33,6 +101,29 @@
             padding: 0 30px;
             cursor: pointer;
 
+            @media screen and (max-width: 1128.5px) {
+                width: 200px;
+            }
+
+            @media screen and (max-width: 816.5px) {
+                width: 175px;
+            }
+
+            @media screen and (max-width: 737.5px) {
+                width: 170px;
+            }
+
+            @media screen and (max-width: 499.5px) {
+                width: 130px;
+                gap: 6px;
+            }
+
+            @media screen and (max-width: 333.5px) {
+                width: 110px;
+            }
+
+            
+
             &:hover{
                 background-color: #0a1649e1;
             }
@@ -41,6 +132,12 @@
                 width: auto;
                 height: 14px;
                 animation: card-arrow 2s infinite;
+
+
+                @media screen and (max-width: 737.5px) {
+                    height: 8px;
+                }
+    
             }
 
             p{
@@ -49,6 +146,23 @@
                 font-weight: 600;
                 font-size: 1.1em;
                 line-height: normal;
+
+                @media screen and (max-width: 1128.5px) {
+                    font-size: 0.8rem;
+                }
+
+                @media screen and (max-width: 816.5px) {
+                    font-size: 0.6rem;
+                }
+
+                @media screen and (max-width: 737.5px) {
+                    font-size: 0.6rem;
+                }
+
+                @media screen and (max-width: 333.5px) {
+                   font-size: 0.4rem;
+                }
+    
             }
         }
     }
@@ -64,6 +178,23 @@
         row-gap: 5%;
         padding-top: 5%;
 
+        @media screen and (max-width: 1128.5px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-items: center;
+            row-gap: 3%;
+        }
+
+        @media screen and (max-width: 743.5px) {
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+
+        @media screen and (max-width: 311.5px) {
+            row-gap: 5%;
+         }
+
         .card {
             width: 100%;
             height: 420px;
@@ -71,6 +202,31 @@
             border-radius: 6px;
             position: relative;
             background-color: #fff;
+
+
+            @media screen and (max-width: 1299.5px) {
+                width: 90%;
+                height: 380px;
+            }
+
+            @media screen and (max-width: 850.5px) {
+                width: 90%;
+                height: 380px;
+            }
+
+            @media screen and (max-width: 743.5px) {
+                width: 70%;
+                height: 420px;
+            }
+
+            @media screen and (max-width: 445.5px) {
+                width: 80%;
+                height: 380px;
+            }
+
+            @media screen and (max-width: 311.5px) {
+                height: 300px;
+            }
 
            .card-agua{
                 width: 32px;
@@ -113,7 +269,9 @@
                 height: 40px;
                 border-left: 4px solid #0a1649;
                 margin-top: 10px;
-                transition: color 0.5s ease;   
+                transition: color 0.5s ease;  
+                
+                
                 
                 &:hover {
                     transition: 0.5s;
@@ -126,6 +284,22 @@
                     font-family: 'Inter', sans-serif;
                     margin-top: 5px;
                     color: #0a1649; 
+
+                    @media screen and (max-width: 1299.5px) {
+                        font-size: 1.4rem;
+                    }
+
+                    @media screen and (max-width: 1183.5px) {
+                        font-size: 1.3rem;
+                    }
+
+                    @media screen and (max-width: 445.5px) {
+                        font-size: 1rem;
+                    }
+
+                    @media screen and (max-width: 301.5px) {
+                        font-size: 0.75rem; 
+                    }
 
                     &:hover {
                         transition: 0.5s;
@@ -146,6 +320,18 @@
                     text-align: justify;
                     font-weight: 300;
                     line-height: 21px;
+
+                    @media screen and (max-width: 1299.5px) {
+                        font-size: 0.95rem;
+                    }
+
+                    @media screen and (max-width: 445.5px) {
+                       font-size: 0.8rem; 
+                    }
+
+                    @media screen and (max-width: 301.5px) {
+                        font-size: 0.7rem; 
+                    }
                 }
             }
         }

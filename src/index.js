@@ -30,7 +30,7 @@ closeIcon.addEventListener('click', () => {
 // var elementDate = document.querySelector('.year-date');
 // elementDate.innerText = anoAtual;
 
-const elementosAClick = document.querySelectorAll('.a-click');
+const elementosAClick = document.querySelectorAll('.link-contato');
 
 // Adicione um ouvinte de evento de clique a cada elemento
 elementosAClick.forEach(function (elemento) {
@@ -45,4 +45,12 @@ elementosAClick.forEach(function (elemento) {
       behavior: 'smooth' // Rola suavemente
     });
   });
+});
+
+
+var botao = document.querySelector('.mapa-btn');
+
+// Adiciona um ouvinte de evento de clique ao botão
+botao.addEventListener("click", function() {
+    window.open("https://www.google.com/maps/place/R.+Padre+Agostinho+de+Matos,+234+-+Parada+Inglesa,+São+Paulo+-+SP,+02247-140/@-23.4868465,-46.6019267,17z/data=!4m6!3m5!1s0x94cef60e34df7ddb:0xae97c13d7de2573!8m2!3d-23.4868465!4d-46.6019267!16s%2Fg%2F11c23q907w", "_blank");
 });

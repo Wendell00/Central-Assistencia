@@ -14,18 +14,18 @@
 </head>
 <body>
     <div class="whatsapp">
-        <a href="https://api.whatsapp.com/send?l=pt&phone=55011993039003&text=Bom dia, eu vim pelo site." target="_blank">
+        <a href="https://api.whatsapp.com/send?l=pt&phone=55011932021855&text=Olá, eu vim pelo site." target="_blank">
             <img src="./public/whatsappBlack.png" alt="WhatsApp">
         </a>
     </div>
-    <nav>
+    <nav id="home">
         <img src="./public/logo.png" alt="Central Assitencia TV Logo" class="nav-logo">
         <ul>
-            <li class="nav-li-active"><a href="" class="">HOME</a></li>
-            <li><a href="">CONHEÇA</a></li>
-            <li><a href="">SERVIÇOS</a></li>
-            <li><a href="">ESPECIALIZAÇÃO</a></li>
-            <li><a href="">CONTATO</a></li>
+            <li class="nav-li-active"><a href="#home" class="">HOME</a></li>
+            <li><a href="#sobre">CONHEÇA</a></li>
+            <li><a href="#consertos">SERVIÇOS</a></li>
+            <li><a href="#especializacao">ESPECIALIZAÇÃO</a></li>
+            <li><a href="#contato">CONTATO</a></li>
         </ul>
         <i class="fa-solid fa-bars menu-icon"></i>
     </nav>
@@ -34,22 +34,22 @@
             <i class="fa-solid fa-xmark aside-x"></i>
             <ul>
                <a href="#home" class="aside-a"><li>HOME</li></a>
-                <a href="#servicos" class="aside-a"><li>CONHEÇA</li></a>
-                <a href="#frota" class="aside-a"><li>SERVIÇOS</li></a>
-                <a href="#clientes" class="aside-a"><li>ESPECIALIZAÇÃO</li></a>
+                <a href="#sobre" class="aside-a"><li>CONHEÇA</li></a>
+                <a href="#consertos" class="aside-a"><li>SERVIÇOS</li></a>
+                <a href="#especializacao" class="aside-a"><li>ESPECIALIZAÇÃO</li></a>
                 <a href="#contato" class="aside-a"><li>CONTATO</li></a>
             </ul>
-            <a href="tel:+55-11-954445544" class="a-call" target="_blank">
+            <a href="tel:+55-11-932021855" class="a-call" target="_blank">
                 <div class="btn-call">
                     <i class="fas fa-phone"></i>
-                    <p>(11) 95444-5544</p>
+                    <p>(11) 93202-1855</p>
                 </div>
             </a>
             <div class="aside-footer">
                 <div class="p1"><i class="fas fa-envelope"></i><p>contato@centralassistenciatv.com</p></div>
                 <div class="p2"> 
-                    <a href="https://www.instagram.com/nascseguranca/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://api.whatsapp.com/send?l=pt&phone=55011954445544&text=Bom dia, eu vim pelo site." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/centralassistectv/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?l=pt&phone=55011932021855&text=Olá, eu vim pelo site." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
@@ -61,43 +61,43 @@
             </video>
             <div class="main-color-video"></div>
         </div>
-        <div class="main-content">
+        <div class="main-content" data-anime="top">
             <h2 class="main-title">
                 QUALIDADE & SOLUÇÃO
             </h2>
             <div class="main-subtitle">Arrumamos sua TV com o melhor preço</div>
             <div class="main-buttons">
-                <div class="main-btn main-btn-saiba"> <p>SAIBA MAIS</p></div>
-                <div class="main-btn main-btn-contato"><p>ENTRE EM CONTATO</p></div>
+               <div class="main-btn main-btn-saiba link-contato"> <p>SAIBA MAIS</p></div>
+                <div class="main-btn main-btn-contato link-contato"><p>ENTRE EM CONTATO</p></div>
             </div>
         </div>
     </main>
 
-    <section class="conheca">
+    <section class="conheca" id="sobre">
         <div class="conheca-container">
-            <img src="./public/conheca-img.png" alt="">
-            <div class="conheca-content">
+            <img src="./public/conheca-img.png" alt="" data-anime="left" class="conheca-img">
+            <div class="conheca-content" data-anime="right">
                 <h2>Assistência Técnica para <span>Televisão</span> em São Paulo</h2>
                 <div class="conheca-items">
                     <div class="conheca-items-div">
                         <img src="./public/conheca-1.png" alt="">
                         <div class="conheca-items-text">
                             <h3>Conserto de TV</h3>
-                            <p>Assistência especializada em conserto de TV.</p>
+                            <p>Assistência especialista no conserto de TV.</p>
                         </div>
                     </div>
                     <div class="conheca-items-div">
                         <img src="./public/conheca-2.png" alt="">
                         <div class="conheca-items-text">
                             <h3>Reparo Smart TV</h3>
-                            <p>Realização de instalação agendada para TV.</p>
+                            <p>Smart TV com problemas? Nós solucionamos.</p>
                         </div>
                     </div>
                     <div class="conheca-items-div">
                         <img src="./public/conheca-3.png" alt="">
                         <div class="conheca-items-text">
                             <h3>Instalação de TV</h3>
-                            <p>Smart TV com problemas? Nós solucionamos.</p>
+                            <p>Realização de instalação em sua residência.</p>
                         </div>
                     </div>
                     <div class="conheca-items-div">
@@ -114,24 +114,24 @@
     <!-- conheca
     especializacao
     footer -->
-    <section class="especializacao">
+    <section class="especializacao" id="especializacao">
         <div class="container-especializacao">
             <h2>Especializações</h2>
             <div class="imgs-especializacao">
                 <ul>
-                    <li>
+                    <li data-anime="left" class="especializacao-li-1">
                         <img src="public/samsung.png" alt="">
                     </li>
                     
-                    <li>
+                    <li data-anime="left" class="especializacao-li-2">
                         <img src="public/sony.png" alt="">
                     </li>
                     
-                    <li>
+                    <li data-anime="left" class="especializacao-li-3">
                         <img src="public/lg.jpg" alt="">
                     </li>
 
-                    <li>
+                    <li data-anime="left" class="especializacao-li-4">
                         <img src="public/philips.png" alt="" class="philips">
                     </li>
                 </ul>
@@ -141,13 +141,13 @@
             
         </div>
     </section>
-    <section class="cards">
+    <section class="cards" id="consertos">
         <div class="card-h2">
-            <h2>Principais Concertos da TV</h2>
-            <div class="card-btn"><img src="./public/seta.png" alt=""><p>ENTRE EM CONTATO</p></div>
+            <h2>Principais Consertos da TV</h2>
+            <div class="card-btn link-contato"><img src="./public/seta.png" alt=""><p>ENTRE EM CONTATO</p></div>
         </div>
         <div class="container-cards">
-            <div class="card">
+            <div class="card cards-card-1" data-anime="left">
                 <div class="img-cards">
                     <div class="img-wrapper">
                         <img src="public/card-1.png" alt="">
@@ -162,7 +162,7 @@
                 <img src="./public/logo-agua.png" alt="" class="card-agua">
             </div>
 
-            <div class="card">
+            <div class="card cards-card-2" data-anime="left">
                 <div class="img-cards">
                     <div class="img-wrapper">
                         <img src="public/tv-sem-imagem.jpg" alt="">
@@ -177,37 +177,38 @@
                 <img src="./public/logo-agua.png" alt="" class="card-agua">
             </div>
 
-            <div class="card">
+            <div class="card cards-card-3" data-anime="left">
                 <div class="img-cards">
                     <div class="img-wrapper">
-                        <img src="public/tvv.png" alt="">
+                        <img src="public/tv-som.jpg" alt="">
                     </div>
                 </div>
                 <div class="title-card">
                     <h3>TV Sem Som</h3>
                 </div>
                 <div class="text-card">
-                    <p>Minha TV liga aparece a imagem normal, mas não sai som, tem conserto? Sim! Agende uma visita na assistência técnica.</p>
+                    <p>Minha TV liga aparece a imagem normal, mas não sai som ? Agende uma visita na assistência técnica.</p>
                 </div>
                 <img src="./public/logo-agua.png" alt="" class="card-agua">
             </div>
 
-            <div class="card">
+            <div class="card cards-card-4" data-anime="left">
                 <div class="img-cards">
                     <div class="img-wrapper">
-                        <img src="public/tv-sem-imagem.jpg" alt="">
+                        <img src="public/tv-instalacao.png" alt="">
                     </div>
                 </div>
                 <div class="title-card">
                     <h3>Instalação Agendada</h3>
                 </div>
                 <div class="text-card">
-                    <p>Precisando instalar sua TV. Agende um horário com nossa assistência técnica para instalação de sua Televisão.</p>
+                    <p>
+                        Se você precisa de ajuda para instalar sua TV, agende um horário com nossa equipe especializada em instalação de televisores.</p>
                 </div>
                 <img src="./public/logo-agua.png" alt="" class="card-agua">
             </div>
 
-            <div class="card">
+            <div class="card cards-card-5" data-anime="left">
                 <div class="img-cards">
                     <div class="img-wrapper">
                         <img src="public/tvv.png" alt="">
@@ -217,42 +218,45 @@
                     <h3>TV Queimou</h3>
                 </div>
                 <div class="text-card">
-                    <p>Sua TV queimou? Deu um estalo e logo após não liga? Foi causa de algum raio ou queda de energia? Agende visita.</p>
+                    <p>Sua TV queimou? Experimentou uma falha após um evento de tempestade ou corte de energia? Agende visita.</p>
                 </div>
                 <img src="./public/logo-agua.png" alt="" class="card-agua">
             </div>
 
-            <div class="card">
+            <div class="card cards-card-6" data-anime="left">
                 <div class="img-cards">
                     <div class="img-wrapper">
-                        <img src="public/tv-sem-imagem.jpg" alt="">
+                        <img src="public/tv-imagem-ruim.jpg" alt="">
                     </div>
                 </div>
                 <div class="title-card">
                     <h3>TV Com Imagem Ruim</h3>
                 </div>
                 <div class="text-card">
-                    <p>TV com tela imagem ruim, tem conserto? Sim! Realizamos o reparo da tela de sua TV aqui na Assistência Técnica de TV.</p>
+                    <p>TV com tela imagem ruim? Realizamos o reparo da tela de sua TV aqui na Assistência Técnica de TV.</p>
                 </div>
                 <img src="./public/logo-agua.png" alt="" class="card-agua">
             </div>
         </div>
     </section>
 
-    <section class="maps">
+    <section class="maps" id="mapa">
         <div class="title-maps">
             <h2>Conheça nossa assistência</h2>
         </div>
         <div class="container-maps">
-            <div class="mapa">
+            <div class="mapa" data-anime="left">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.2683605984275!2d-46.60450698825026!3d-23.48684155877214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef60e34df7ddb%3A0xae97c13d7de2573!2sR.%20Padre%20Agostinho%20de%20Matos%2C%20234%20-%20Parada%20Inglesa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002247-140!5e0!3m2!1spt-BR!2sbr!4v1696953910228!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="maps-content">
+            <div class="maps-content" data-anime="right">
                 <ul class="ul-1">
                     <li><p>R. Padre Agostinho de Matos 234</p></li>
                     <li><p>Parada Inglesa, SP - São Paulo</p></li>
                     <li><p>Seg á Sexta das 08:00 até as 18:00</p></li>
-                    <li><p>Sábado das 09:00 até as 16:00</p></li>
+                    <!-- <li><p>Sábado das 09:00 até as 16:00</p></li>
+                    <li><p>Sábado das 09:00 até as 16:00</p></li> -->
+                    <li><p>Tel (11) 4306-1358</p></li>
+                    <li><p>Tel (Whats) (11) 93202-1855</p></li>
 
                 </ul>
                 <ul class="ul-2">
@@ -307,10 +311,10 @@
                 <div class="footer-nav">
                     <ul>
                         <a href="#home"><li>HOME</li></a>
-                        <a href="#servicos"><li>CONHEÇA</li></a>
-                        <a href="#frota"><li>SERVIÇO</li></a>
-                        <a href="#vantagens"><li>ESPECIALIZAÇÃO</li></a>
-                        <a href="#vantagens"><li>CONTATO</li></a>
+                        <a href="#sobre"><li>CONHEÇA</li></a>
+                        <a href="#consertos"><li>SERVIÇO</li></a>
+                        <a href="#especializacao"><li>ESPECIALIZAÇÃO</li></a>
+                        <a href="#contato"><li>CONTATO</li></a>
                     </ul>
                 </div>
             </div>
@@ -319,7 +323,7 @@
                 <div class="footer-redes">
                     <p>Entre em contato também pelas nossas redes sociais</p>
                     <a href="https://www.instagram.com/centralassistectv/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://api.whatsapp.com/send?l=pt&phone=55011993039003&text=Bom dia, eu vim pelo site." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://api.whatsapp.com/send?l=pt&phone=55011932021855&text=Olá, eu vim pelo site." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
