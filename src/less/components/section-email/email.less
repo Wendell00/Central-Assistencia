@@ -6,7 +6,7 @@
     z-index: 4;
     padding: 40px 0px;
 
-    .email-h3-container{
+    .email-h2-container{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -23,14 +23,26 @@
           height: 70px;
         }
 
-        h3{
+        h2{
             font-family: 'Jost', sans-serif;
             font-weight: 600;
-            font-size: 3rem;
+            font-size: 1.8rem;
             color: #0E387A;
 
-            @media screen and (min-width: 540px) {
-              font-size: 3.5em;
+            @media screen and (min-width: 350px) {
+              font-size: 1.8rem;
+            }
+
+            @media screen and (min-width: 430px) {
+                font-size: 2.2rem;
+            }
+
+            @media screen and (min-width: 700px) {
+                font-size: 3rem;
+            }
+
+            @media screen and (min-width: 860px) {
+                font-size: 3.5rem;
             }
         }
     }
