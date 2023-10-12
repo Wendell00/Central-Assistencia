@@ -13,12 +13,11 @@
     <title>Central Assistência TV</title>
 </head>
 <body>
-    <!-- <div class="whatsapp">
+    <div class="whatsapp">
         <a href="https://api.whatsapp.com/send?l=pt&phone=55011993039003&text=Bom dia, eu vim pelo site." target="_blank">
             <img src="./public/whatsappBlack.png" alt="WhatsApp">
         </a>
-    </div> -->
-
+    </div>
     <nav>
         <img src="./public/logo.png" alt="Central Assitencia TV Logo" class="nav-logo">
         <ul>
@@ -28,7 +27,33 @@
             <li><a href="">ESPECIALIZAÇÃO</a></li>
             <li><a href="">CONTATO</a></li>
         </ul>
+        <i class="fa-solid fa-bars menu-icon"></i>
     </nav>
+    <aside class="aside-nav display-toggle">
+        <div class="aside-child">
+            <i class="fa-solid fa-xmark aside-x"></i>
+            <ul>
+               <a href="#home" class="aside-a"><li>HOME</li></a>
+                <a href="#servicos" class="aside-a"><li>CONHEÇA</li></a>
+                <a href="#frota" class="aside-a"><li>SERVIÇOS</li></a>
+                <a href="#clientes" class="aside-a"><li>ESPECIALIZAÇÃO</li></a>
+                <a href="#contato" class="aside-a"><li>CONTATO</li></a>
+            </ul>
+            <a href="tel:+55-11-954445544" class="a-call" target="_blank">
+                <div class="btn-call">
+                    <i class="fas fa-phone"></i>
+                    <p>(11) 95444-5544</p>
+                </div>
+            </a>
+            <div class="aside-footer">
+                <div class="p1"><i class="fas fa-envelope"></i><p>contato@centralassistenciatv.com</p></div>
+                <div class="p2"> 
+                    <a href="https://www.instagram.com/nascseguranca/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?l=pt&phone=55011954445544&text=Bom dia, eu vim pelo site." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </aside>
     <main>
         <div class="main-video">
             <video loop autoplay muted class="video" id="main-video">
@@ -214,29 +239,94 @@
         </div>
     </section>
 
-    <!-- <section class="maps">
+    <section class="maps">
         <div class="title-maps">
-            <h2>Conheça nossa loja</h2>
+            <h2>Conheça nossa assistência</h2>
         </div>
         <div class="container-maps">
             <div class="mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.2683605984275!2d-46.60450698825026!3d-23.48684155877214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef60e34df7ddb%3A0xae97c13d7de2573!2sR.%20Padre%20Agostinho%20de%20Matos%2C%20234%20-%20Parada%20Inglesa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002247-140!5e0!3m2!1spt-BR!2sbr!4v1696953910228!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="info-maps">
-                <ul>
-                    <li><img src="public/relogio.png" alt="">Atendimento no mesmo dia</li>
-                    <li><img src="public/pin.png" alt="" class="li-2">Atendemos todos os bairros</li>
-                    <li>Conserto de TV's a domicilio</li>
-                    <li>Orçamento em até 24 horas</li>
+            <div class="maps-content">
+                <ul class="ul-1">
+                    <li><p>R. Padre Agostinho de Matos 234</p></li>
+                    <li><p>Parada Inglesa, SP - São Paulo</p></li>
+                    <li><p>Seg á Sexta das 08:00 até as 18:00</p></li>
+                    <li><p>Sábado das 09:00 até as 16:00</p></li>
+
                 </ul>
-                <div class="btn-maps">
-                    <button>
-                        <a href="https://api.whatsapp.com/send?l=pt&phone=55011993039003&text=Bom dia, eu vim pelo site." target="_blank">Agende uma visita</a>
-                    </button>
+                <ul class="ul-2">
+                    <li><p>Atendimento no mesmo dia</p><img src="./public/relogio.png" alt=""></li>
+                    <li><p>Atendemos todos os bairros</p><img src="./public/pin.png" alt=""></li>
+                    <li><p>Consertos de TV's a domicilio</p><img src="./public/ferramenta.png" alt=""></li>
+                    <li><p>Orçamento em até 24 horas</p><img src="./public/calendario.png" alt=""></li>
+                </ul>
+
+                <div class="mapa-btn">
+                    <p>Ver Rotas</p>
+                    <img src="./public/desvio.png" alt="">
                 </div>
             </div>
         </div>
-    </section> -->
+        <div class="bg-maps">
+            
+        </div>
+    </section>
+    <section class="email" id="contato">
+        <div class="email-h3-container">
+            <h3>Contato</h3>
+        </div>
+        <div class="e-mail-form">
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off">
+                <label for="name">Nome*</label>
+            </div>
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off">
+                <label for="name">E-mail*</label>
+            </div>
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off">
+                <label for="name">Telefone*</label>
+            </div>
+            <div class="inputGroup">
+                <textarea required="" autocomplete="off" cols="30" rows="5"></textarea>
+                <label for="name">Mensagem (Problema)*</label>
+            </div>
+            <button>Enviar</button>
+            <img src="./public/logo-agua2.png" class="e-mail-logo" alt="">
+        </div>
+    </section>
+    <footer>
+        <div class="line-white"></div>
+        <div class="content-footer">
+            <div class="elements-footer" id="elements-footer-left">
+                <div class="footer-full-logo">
+                    <img src="./public/logo-agua2.png" alt="logo First North" class="logo-footer">
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <a href="#home"><li>HOME</li></a>
+                        <a href="#servicos"><li>CONHEÇA</li></a>
+                        <a href="#frota"><li>SERVIÇO</li></a>
+                        <a href="#vantagens"><li>ESPECIALIZAÇÃO</li></a>
+                        <a href="#vantagens"><li>CONTATO</li></a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elements-footer" id="elements-footer-right">
+                <div class="footer-redes">
+                    <p>Entre em contato também pelas nossas redes sociais</p>
+                    <a href="https://www.instagram.com/centralassistectv/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?l=pt&phone=55011993039003&text=Bom dia, eu vim pelo site." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023. Todos os direitos reservados Central Assistencia TV. &copy;</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="dist/bundle.js"></script>
     <script src="src/waypoint.js"></script>

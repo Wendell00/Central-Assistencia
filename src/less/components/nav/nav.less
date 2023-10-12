@@ -9,16 +9,42 @@ nav{
     .nav-logo{
         width: auto;
         height: 80%;
-        margin-left: 80px;
+        margin-left: 20px;
+
+        @media screen and (min-width: 930px) {
+            margin-left: 80px;
+        }
+    }
+
+    .menu-icon{
+        display: block;
+        font-size: 1.8em;
+        color: #0E387A;
+        margin-right: 30px;
+        cursor: pointer;
+
+        @media screen and (min-width: 870px) {
+            display: none;
+        }
+
     }
 
     ul{
-        width: calc(70vw - 220px);
+        width: 60vw;
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-right: 10vw;
+        display: none;
+
+        @media screen and (min-width: 870px) {
+            display: flex;
+        }
+
+        @media screen and (min-width: 1050px) {
+            width: calc(70vw - 220px);
+        }
 
         li{
             width: 60px;
@@ -42,6 +68,160 @@ nav{
 
         .nav-li-active{
             border-bottom: 2px solid #0E387A;
+        }
+    }
+}
+
+
+aside{
+    position: fixed;
+    z-index: 15;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: end;
+    top: 0;
+    right: 0;
+
+    .aside-child{
+        width: 400px;
+        min-height: 100vh;
+        height: auto;
+        background-color: #ffffff;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        @media screen and (max-width: 301.8px) {
+            width: 100vw;
+        }
+
+        .aside-x{
+            position: absolute;
+            top: 40px; right: 50px;
+            font-size: 1.4em;
+            color: #1E201F;
+            cursor: pointer;
+        }
+
+        ul{
+            display: flex;
+            width: 100%;
+            height: auto;
+            align-items: start;
+            flex-direction: column;
+            padding-top: 80px;
+            padding-left: 25px;
+
+            .aside-a{
+                text-decoration: none;
+                color: #0E387A;  
+                font-size: 1em;  
+                font-family: 'Jost', sans-serif;
+                font-weight: 700;
+                margin-bottom: 35px;  
+                width: 100%; 
+                cursor: pointer;
+
+                &:hover{
+                    color: #0a0a4c;
+                }
+            }
+        }
+
+        .a-call{
+            width: 200px; height: 60px;
+            background-color: #0E387A;
+            padding: 4px;
+            box-sizing: border-box;
+            text-decoration: none;
+            border-radius: 8px;
+            display: block;
+            margin-bottom: 10px;
+
+            .btn-call{
+                width: 100%; height: 100%;
+                min-height: 52px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                background-color: #0E387A;
+
+                i{
+                    margin-right: 8px;
+                    color: white;
+                }
+
+                p{
+                    color: white;
+                    font-family: 'Jost', sans-serif;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .aside-footer{
+            width: 100%; height: 200px;
+            background-color: #0E387A;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .p1{
+                background-color: transparent;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+
+                p{
+                    color: white;
+                    font-size: 0.9em;
+                    margin-right: 8px;
+                    font-family: 'Karla', sans-serif;
+                    font-weight: 500;
+                    
+                    @media screen and (min-width: 350px) {
+                        font-size: 1.1em;
+                    }
+                }
+
+                i{
+                    font-size: 2em;
+                    color: white;
+                    margin-bottom: 8px;
+                    cursor: pointer;
+                }
+            }
+
+            .p2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                flex-direction: row;
+
+                a{
+                    text-decoration: none;
+                    
+                    &:first-child{
+                        margin-right: 25px;
+                    }
+                    
+                    i{
+                        font-size: 2em;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
         }
     }
 }
