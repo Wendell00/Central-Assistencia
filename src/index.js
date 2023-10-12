@@ -47,6 +47,23 @@ elementosAClick.forEach(function (elemento) {
   });
 });
 
+const elementosBClick = document.querySelectorAll('.link-saiba');
+
+// Adicione um ouvinte de evento de clique a cada elemento
+elementosBClick.forEach(function (elemento) {
+  elemento.addEventListener('click', function () {
+    // Obtém a posição da seção de contato em relação ao topo da página
+    const contatoSection = document.getElementById('sobre');
+    const contatoSectionTop = contatoSection.offsetTop;
+
+    // Rola a página para a posição da seção de contato
+    window.scrollTo({
+      top: contatoSectionTop,
+      behavior: 'smooth' // Rola suavemente
+    });
+  });
+});
+
 
 var botao = document.querySelector('.mapa-btn');
 

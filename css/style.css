@@ -972,7 +972,6 @@ main .main-content .main-buttons .main-btn-contato:hover {
   flex-direction: column;
   background-color: white;
   gap: 40px;
-  margin-bottom: 60px;
 }
 @media screen and (max-width: 1128.5px) {
   .cards {
@@ -981,22 +980,7 @@ main .main-content .main-buttons .main-btn-contato:hover {
 }
 @media screen and (max-width: 743.5px) {
   .cards {
-    height: 3250px;
-  }
-}
-@media screen and (max-width: 447.5px) {
-  .cards {
-    height: 3200px;
-  }
-}
-@media screen and (max-width: 433.5px) {
-  .cards {
-    height: 3010px;
-  }
-}
-@media screen and (max-width: 313.5px) {
-  .cards {
-    height: 2640px;
+    height: 2950px;
   }
 }
 .cards .card-h2 {
@@ -1162,30 +1146,25 @@ main .main-content .main-buttons .main-btn-contato:hover {
   max-width: 1200px;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   column-gap: 5%;
   row-gap: 5%;
   padding-top: 5%;
 }
 @media screen and (max-width: 1128.5px) {
   .cards .container-cards {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     row-gap: 3%;
   }
 }
 @media screen and (max-width: 743.5px) {
   .cards .container-cards {
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-columns: 1fr;
     justify-items: center;
-  }
-}
-@media screen and (max-width: 311.5px) {
-  .cards .container-cards {
-    row-gap: 5%;
   }
 }
 .cards .container-cards .card {
@@ -1199,30 +1178,17 @@ main .main-content .main-buttons .main-btn-contato:hover {
 @media screen and (max-width: 1299.5px) {
   .cards .container-cards .card {
     width: 90%;
-    height: 380px;
-  }
-}
-@media screen and (max-width: 850.5px) {
-  .cards .container-cards .card {
-    width: 90%;
-    height: 380px;
   }
 }
 @media screen and (max-width: 743.5px) {
   .cards .container-cards .card {
-    width: 70%;
-    height: 420px;
+    width: 70vw;
+    height: 380px;
   }
 }
 @media screen and (max-width: 445.5px) {
   .cards .container-cards .card {
-    width: 80%;
-    height: 380px;
-  }
-}
-@media screen and (max-width: 311.5px) {
-  .cards .container-cards .card {
-    height: 380;
+    width: 80vw;
   }
 }
 .cards .container-cards .card .card-agua {
@@ -1233,11 +1199,22 @@ main .main-content .main-buttons .main-btn-contato:hover {
   right: 0;
   opacity: 0.4;
 }
+@media screen and (max-width: 292.5px) {
+  .cards .container-cards .card .card-agua {
+    height: 20px;
+    width: 20px;
+  }
+}
 .cards .container-cards .card .img-cards {
-  height: 50%;
+  height: 40%;
   width: 100%;
   overflow: hidden;
   border-radius: 6px 6px 0 0;
+}
+@media screen and (min-width: 744px) {
+  .cards .container-cards .card .img-cards {
+    height: 50%;
+  }
 }
 .cards .container-cards .card .img-cards .img-wrapper {
   width: 100%;
@@ -1336,6 +1313,7 @@ main .main-content .main-buttons .main-btn-contato:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 3;
 }
 @media screen and (min-width: 860px) {
   .maps {
@@ -1678,6 +1656,26 @@ main .main-content .main-buttons .main-btn-contato:hover {
   width: 90px;
   height: auto;
   left: 45%;
+}
+@media screen and (max-width: 619.5px) {
+  .email .e-mail-form .e-mail-logo {
+    left: 42%;
+  }
+}
+@media screen and (max-width: 493.5px) {
+  .email .e-mail-form .e-mail-logo {
+    left: 40%;
+  }
+}
+@media screen and (max-width: 390.5px) {
+  .email .e-mail-form .e-mail-logo {
+    left: 39%;
+  }
+}
+@media screen and (max-width: 281.5px) {
+  .email .e-mail-form .e-mail-logo {
+    left: 35%;
+  }
 }
 .email .e-mail-form button {
   width: 100%;
