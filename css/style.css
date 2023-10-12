@@ -1225,6 +1225,9 @@ main .main-content .main-buttons .main-btn-contato:hover {
     margin: 0;
   }
 }
+.maps .container-maps .maps-content .mapa-btn:hover {
+  background-color: rgba(255, 255, 255, 0.822);
+}
 .maps .container-maps .maps-content .mapa-btn img {
   width: 30px;
   height: auto;
