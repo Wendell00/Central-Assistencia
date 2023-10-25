@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# NASC
 
-First, run the development server:
+A Central Assistencia TV é um Freelance feito usando HTML/CSS/JS, para um empresa que realiza o reparo técnico e manutenção de televisores, o cliente aprovou o resultado e assim foi o resultado final.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+[EN] The TV Assistance Center (Central Assistencia TV) is a Freelance created using HTML/CSS/JS, for a company that carries out technical repair and maintenance of TVs, the customer supported the result and this was the final result.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Como rodar o projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+https://centralassistenciatv.com/
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Faça download do projeto
+2. Abra o index.html que se encontra na raíz do projeto.
+5. Aprecie 🚀
 
-## Learn More
+## Home
 
-To learn more about Next.js, take a look at the following resources:
+![Home Screenshot](./public/screenshot/home.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Feedback
 
-## Deploy on Vercel
+Se você tiver algum feedback, por favor me informe para eu evoluir meus conhecimentos.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[EN] If you have any feedback, please let me know so I can improve my knowledge.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Contribuindo
+
+Contribuições são sempre bem-vindas!
+
+[EN] Contributions are always welcome!
+
